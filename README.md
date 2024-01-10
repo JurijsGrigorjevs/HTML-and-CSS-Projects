@@ -1,5 +1,6 @@
 # **HTML and CSS Project**
 ![Static Badge](https://img.shields.io/badge/HTML-red)
+![Static Badge](https://img.shields.io/badge/CSS-yellow)
 
 
 ## **Introduction**
