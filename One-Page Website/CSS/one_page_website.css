@@ -1,0 +1,293 @@
+/* CSS One page website */
+
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.gallery_images {
+    font-weight: bold;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: #2308b9;
+    text-shadow: 0px 0px 10px rgb(69, 30, 223);
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* background image */
+.background {
+          background-image: linear-gradient(rgba(255,255,255, 0.7) 0 100%), url("../images/thumb/thumbnail_7.PNG");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+          }
+      
+
+
+.vid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(226, 229, 232);  
+    }
+
+     /* Navigation */
+.navigation_1{
+           list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            font-style: italic;
+            font-weight: bold;
+            font-size: x-large;
+            border: 1px solid black;
+            opacity: 10;
+            background-color: rgb(209, 240, 166);  
+        }
+        .home_1 {
+            margin: 10px;
+            float: left;
+            width: 180px;
+            }
+
+        .home_2 {
+            font-weight: bold;
+            font-size: xx-large;
+            text-align: center;
+            color: #2308b9;
+        }
+
+.home_3 {
+    font-size: x-large; font-style: italic; font-weight: bold; color: rgb(141, 23, 51);
+    text-align: center;
+}
+
+        .gallery_1 { 
+            margin: 10px;
+            float: left;
+            width: 180px;
+        }
+        .reservations_1 {
+            margin: 10px;
+            float: left;
+            width: 180px;
+          }
+
+        .gallery_2 {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           gap: 10px;
+           text-align: center;
+          
+              }
+
+       .gallery_3 {
+           display: block;
+           max-width: 100%;
+           height: auto;
+           padding: 5px;
+           text-align: center;
+           color: rgb(22, 3, 84);
+           font-size: x-large;
+           font-weight: bold;
+       }
+      .gallery_4 {
+        color:rgb(88, 5, 137);
+         font-size:xx-large; 
+         text-align: center;
+      }
+      .gallery_5 {
+           display: block;
+           max-width: 100%;
+           height: auto;
+           padding: 10px;
+           text-align: left;
+           color: rgb(22, 3, 84);
+           font-size: x-large;
+           font-weight: bold;
+       }
+
+       .reservations_2 {
+        color:rgb(88, 5, 137);
+         font-size:xx-large; 
+         text-align: center;
+       }
+
+       .footer {
+        color:rgb(57, 5, 187);
+         font-size: x-large; 
+         text-align: right;
+         background-color: rgb(241, 231, 121);
+         text-shadow: 0px 0px 10px rgb(131, 32, 218);
+       }
+
+       /* summary */
+       .summary {
+        font-size: large; 
+        font-weight: bold;
+       }
+
+       /* information */
+
+    .information {
+        font-size: x-large;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* label */
+    .label {
+        font-size: large; 
+        font-weight: bold;
+    }
+
+    /* click */
+    .Click {
+        font-size: large; 
+        font-weight: bold;
+    }
+
+    /* climb */
+    .climb {
+        font-size: x-large;
+        text-align: center;
+        color: #b50909;
+    }

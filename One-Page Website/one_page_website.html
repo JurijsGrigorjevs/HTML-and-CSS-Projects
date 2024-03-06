@@ -2,29 +2,13 @@
 <html lang="en">
     <head>
       <title>Mountain Trek</title>
-	  <meta charset="utf-8">
-    
-    <!-- background image-->
-  <style>
-        .background{
-            background-image: linear-gradient(rgba(255,255,255, 0.7) 0 100%), url("images/thumb/thumbnail_7.PNG");
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-          }
-      </style>
-
-<style>
-    .vid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(226, 229, 232);  
-    }
-</style>
+       <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="JS/one_page_website.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="CSS/one_page_website.css"/>
     </head>
+	 
     <body>
 
    <div class="vid">
@@ -33,95 +17,71 @@
        
       </div>
 
+<h2 class="gallery_images">GALLERY IMAGES</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="images/thumb/thumbnail_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/thumb/thumbnail_5.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/thumb/thumbnail_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/thumb/thumbnail_4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/thumb/thumbnail_1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/thumb/thumbnail_5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/thumb/thumbnail_3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/thumb/thumbnail_4.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="Mount  Everest">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/thumb/thumbnail_5.png" style="width:100%" onclick="currentSlide(2)" alt="Makalu">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="Kangchenjunga">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="Lhotse">
+    </div>
+  </div>
+</div>
+
      <div class="background">
-
-      <!-- Navigation -->
-      <style>
-        .navigation_1{
-           list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            font-style: italic;
-            font-weight: bold;
-            font-size: x-large;
-            border: 1px solid black;
-            opacity: 10;
-            background-color: rgb(209, 240, 166);  
-        }
-        .home_1 {
-            margin: 10px;
-            float: left;
-            width: 180px;
-            }
-
-        .home_2 {
-            font-weight: bold;
-            font-size: xx-large;
-            text-align: center;
-            color: #2308b9;
-        }
-        .gallery_1 { 
-            margin: 10px;
-            float: left;
-            width: 180px;
-        }
-        .reservations_1 {
-            margin: 10px;
-            float: left;
-            width: 180px;
-          }
-
-        .gallery_2 {
-           display: grid;
-           grid-template-columns: repeat(2, 1fr);
-           gap: 10px;
-           text-align: center;
-          
-              }
-
-       .gallery_3 {
-           display: block;
-           max-width: 100%;
-           height: auto;
-           padding: 5px;
-           text-align: center;
-           color: rgb(22, 3, 84);
-           font-size: x-large;
-           font-weight: bold;
-       }
-      .gallery_4 {
-        color:rgb(88, 5, 137);
-         font-size:xx-large; 
-         text-align: center;
-      }
-      .gallery_5 {
-           display: block;
-           max-width: 100%;
-           height: auto;
-           padding: 10px;
-           text-align: left;
-           color: rgb(22, 3, 84);
-           font-size: x-large;
-           font-weight: bold;
-       }
-
-       .reservations_2 {
-        color:rgb(88, 5, 137);
-         font-size:xx-large; 
-         text-align: center;
-       }
-
-       .footer {
-        color:rgb(57, 5, 187);
-         font-size: x-large; 
-         text-align: right;
-         background-color: rgb(241, 231, 121);
-         text-shadow: 0px 0px 10px rgb(131, 32, 218);
-       }
-        
-      </style>
-	
       <div>
         <nav>
             <ul class="navigation_1">
@@ -141,7 +101,7 @@
 		    <p><span>Embark on the ultimate ascent with Mountain Trek, your premier online destination for conquering the world's highest mountains.</span></p>
 		 </div>
          <div class="home_3">
-            <p><span style="font-size: x-large; font-style: italic; font-weight: bold; color: rgb(141, 23, 51);">&nbsp;“Every mountain top is within reach if you just keep climbing.”</span>- Barry Finlay,Kilimanjaro and Beyond</p>
+            <p><span>&nbsp;“Every mountain top is within reach if you just keep climbing.”</span>- Barry Finlay,Kilimanjaro and Beyond</p>
          </div>
 	    </div>
 	</div>
@@ -228,9 +188,6 @@
                   </div>
 			   
 		      <!-- END PHOTO-CONTAINER 6 -->
-			
-			 
-		     
             </div>     
       </div>
 	</section>
@@ -243,9 +200,9 @@
 	      <div>
             <div><h1 class="reservations_2">RESERVATIONS</h1></div>
 		    <div>
-		        <h2 style="font-size: x-large;"><span>You can climb the highest mountains on Earth, book your climb today!</span>
+		        <h2  class="climb">You can climb the highest mountains on Earth, book your climb today!</span>
 			  <br/>Reserve your Mountain Trek today!</h2>
-			  <p style="font-size: x-large; font-weight: bold;">
+			  <p  class="information">
 			     Please provide us with your basic contact information.
 			  </p>
 			  <div class="reservations_2">
@@ -255,11 +212,11 @@
 				     <input type="text" value="Email Address"><br>
 				     <input type="text" value="Phone Number"><br>
                 
-				          <label style="font-size: large; font-weight: bold;"><br>Terms and Conditions</label>
-                          <details>
-                            <summary style="font-size: large; font-weight: bold;">Click to expand</summary>
+				<label  class="label"><br>Terms and Conditions</label>
+          <details>
+          <summary class="summary">Click to expand</summary>
                            
-                            <p style="font-size: large; font-weight: bold;">Participants must adhere to a non-refundable deposit requirement, acknowledge the cancellation policy, ensure health and fitness suitability, obtain travel insurance, follow provided itineraries, take responsibility for personal equipment, comply with guide instructions, prioritize environmental responsibility, recognize force majeure circumstances, sign a liability waiver, and accept the jurisdiction specified in these terms and conditions for the mountain trek short.</p>
+          <p class="Click">Participants must adhere to a non-refundable deposit requirement, acknowledge the cancellation policy, ensure health and fitness suitability, obtain travel insurance, follow provided itineraries, take responsibility for personal equipment, comply with guide instructions, prioritize environmental responsibility, recognize force majeure circumstances, sign a liability waiver, and accept the jurisdiction specified in these terms and conditions for the mountain trek short.</p>
                         </details>
                         <div>
                             <input type="submit" value="Submit">
@@ -273,6 +230,7 @@
 	    </div>
       </section>
       <!-- END RSVP -->
+
     </div>
       <!-- FOOTER -->
 	<div class="footer">
