@@ -15,8 +15,8 @@ The project primarily makes use of the following technologies:
 ## **Launch**
 To ensure reproducibility, the project was developed using the following versions of the technologies:
 
-- HTML version: HTML5
-- CSS version: CSS3
+- HTML version:  HTML5
+- CSS version:  CSS3
 
 ## **Table of Contents**
 - [Introduction](#introduction)
